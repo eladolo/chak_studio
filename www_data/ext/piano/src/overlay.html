@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Piano notes overlay</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/keyboard100x100.png" />
+        <link href="//fonts.googleapis.com/css?family=Open+Sans|Abril+Fatface|Josefin+Slab|Sedgwick+Ave|Acme|Anton|Arvo|Dancing+Script|Lato|Lora|Merriweather|Pacifico|Questrial|Saira+Extra+Condensed|Sedgwick+Ave|Sedgwick+Ave+Display|Shadows+Into+Light|Oswald|Material+Icons|Mansalva|Turret+Road|Amatic+SC|Caveat|Luckiest+Guy|Bangers" rel="stylesheet">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/overlay.css">
+    </head>
+    <body class="form_view">
+        <audio id="sound-A2" src="audio/A2.ogg" preload="auto"></audio>
+        <audio id="sound-BB2" src="audio/Bb2.ogg" preload="auto"></audio>
+        <audio id="sound-B2" src="audio/B2.ogg" preload="auto"></audio>
+        <audio id="sound-C3" src="audio/C3.ogg" preload="auto"></audio>
+        <audio id="sound-DB3" src="audio/Db3.ogg" preload="auto"></audio>
+        <audio id="sound-D3" src="audio/D3.ogg" preload="auto"></audio>
+        <audio id="sound-EB3" src="audio/Eb3.ogg" preload="auto"></audio>
+        <audio id="sound-E3" src="audio/E3.ogg" preload="auto"></audio>
+        <audio id="sound-F3" src="audio/F3.ogg" preload="auto"></audio>
+        <audio id="sound-GB3" src="audio/Gb3.ogg" preload="auto"></audio>
+        <audio id="sound-G3" src="audio/G3.ogg" preload="auto"></audio>
+        <audio id="sound-AB3" src="audio/Ab3.ogg" preload="auto"></audio>
+        <audio id="sound-A3" src="audio/A3.ogg" preload="auto"></audio>
+        <audio id="sound-BB3" src="audio/Bb3.ogg" preload="auto"></audio>
+        <audio id="sound-B3" src="audio/B3.ogg" preload="auto"></audio>
+        <audio id="sound-C4" src="audio/C4.ogg" preload="auto"></audio>
+        <audio id="sound-DB4" src="audio/Db4.ogg" preload="auto"></audio>
+        <audio id="sound-D4" src="audio/D4.ogg" preload="auto"></audio>
+        <audio id="sound-EB4" src="audio/Eb4.ogg" preload="auto"></audio>
+        <audio id="sound-E4" src="audio/E4.ogg" preload="auto"></audio>
+        <audio id="sound-F4" src="audio/F4.ogg" preload="auto"></audio>
+        <audio id="sound-GB4" src="audio/Gb4.ogg" preload="auto"></audio>
+        <audio id="sound-G4" src="audio/G4.ogg" preload="auto"></audio>
+        <audio id="sound-AB4" src="audio/Ab4.ogg" preload="auto"></audio>
+        <audio id="sound-A4" src="audio/A4.ogg" preload="auto"></audio>
+        <audio id="sound-B4" src="audio/B4.ogg" preload="auto"></audio>
+        <audio id="sound-BB4" src="audio/Bb4.ogg" preload="auto"></audio>
+        <audio id="sound-C5" src="audio/C5.ogg" preload="auto"></audio>
+
+        <a class="btn-floating btn-large waves-effect waves-light btnShowModal hide-on-small-only hide" style="
+        width:56px; height:56px; background-color: transparent !important;"><img alt="Piano on stream" src="img/keyboard100x100.png" style="width:30px; top:5px;"></a>
+
+        <div id="config_modal" class="modal" style="max-height: 380px; background-color: rgba(255,255,255,0.5);">
+            <div class="modal-content">
+                <div class="col s12">
+                    <ul class="tabs" style="overflow: hidden;">
+                        <li class="tab col s3"><a href="#main" class="label_leaderboard_tab_pianoon">Notes</a></li>
+                        <li class="tab col s3"><a href="#note10" class="label_leaderboard_tab_note10">Notes 10</a></li>
+                        <li class="tab col s3"><a href="#view10" class="label_leaderboard_tab_viwer10">Viewer 10</a></li>
+                        <li class="tab col s3"><a href="#bit10" class="label_leaderboard_tab_bits10">Bits 10</a></li>
+                    </ul>
+                </div>
+                <div class="content_overflow" style="overflow-y: hidden;">
+                    <div id="main" class="row" style="overflow: hidden;">
+                        <table class="tb_main centered">
+                            <tbody>
+                                <tr>
+                                    <td class="row">
+                                        <div class="input-field col s4">
+                                            <select id="note_select" class="validate browser-default tooltiped label_select_note" data-position="top" data-tooltip="Notes">
+                                                <option value="A">A</option>
+                                                <option value="B">B</option>
+                                                <option value="C">C</option>
+                                                <option value="D">D</option>
+                                                <option value="E">E</option>
+                                                <option value="F">F</option>
+                                                <option value="G">G</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <select id="alterations_select" class="validate browser-default tooltiped label_select_alterations" data-position="top" data-tooltip="Alterations">
+                                                <option value=""></option>
+                                                <option value="b">b</option>
+                                                <option value="#">#</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <select id="mode_select" class="validate browser-default tooltiped label_select_mode" data-position="top" data-tooltip="Mode">
+                                                <option value="I">Ionian (the major scale)</option>
+                                                <option value="II">Dorian</option>
+                                                <option value="III">Phrygian</option>
+                                                <option value="IV">Lydian</option>
+                                                <option value="V">Mixolydian</option>
+                                                <option value="VI">Aeolian (the minor scale)</option>
+                                                <option value="VII">Locrian</option>
+                                                <option value="VM">Pethatonic Major</option>
+                                                <option value="Vm">Pethatonic minor</option>
+                                                <option value="NM">Neapolitan Major</option>
+                                                <option value="Nm">Neapolitan minor</option>
+                                                <option value="AM">Arabian</option>
+                                                <option value="Am">Arabian minor</option>
+                                                <option value="HF">Hungarian Folk</option>
+                                                <option value="HM">Hungarian Major</option>
+                                                <option value="Hm">Hungarian minor</option>
+                                                <option value="insen">In sen</option>
+                                                <option value="kumoi">Kumoi</option>
+                                                <option value="hirojoshi">Hirojoshi</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <a class="btn-large btnPlayScale white-text blue label_play_scale cursor" style="width: 100%;">Play scale</a>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <select id="second_select" class="validate browser-default tooltiped label_select_second" data-position="top" data-tooltip="2th">
+                                                <option value="none"></option>
+                                                <option value="M">Major</option>
+                                                <option value="m">minor</option>
+                                                <option value="Aug">Aug</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <select id="third_select" class="validate browser-default tooltiped label_select_third" data-position="top" data-tooltip="3th">
+                                                <option value="M">Major</option>
+                                                <option value="m">minor</option>
+                                                <option value="sus2">sus2</option>
+                                                <option value="sus4">sus4</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <select id="fourth_select" class="validate browser-default tooltiped label_select_fourth" data-position="top" data-tooltip="4th">
+                                                <option value="none"></option>
+                                                <option value="perfect">Perfect </option>
+                                                <option value="Aug">Aug</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <select id="fith_select" class="validate browser-default tooltiped label_select_fith" data-position="top" data-tooltip="5th">
+                                                <option value=""></option>
+                                                <option value="Aug">Aug</option>
+                                                <option value="Dim">Dim</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <select id="six_select" class="validate browser-default tooltiped label_select_six" data-position="top" data-tooltip="6th">
+                                                <option value="none"></option>
+                                                <option value="M">Major</option>
+                                                <option value="m">minor</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <select id="seven_select" class="validate browser-default tooltiped label_select_seven" data-position="top" data-tooltip="7th">
+                                                <option value="none"></option>
+                                                <option value="maj7">Major</option>
+                                                <option value="7">minor</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <select id="nine_select" class="validate browser-default tooltiped label_select_nine" data-position="top" data-tooltip="9th">
+                                                <option value="none"></option>
+                                                <option value="7/9">Major</option>
+                                                <option value="7/b9">minor</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <select id="eleven_select" class="validate browser-default tooltiped label_select_eleven" data-position="top" data-tooltip="11th">
+                                                <option value="none"></option>
+                                                <option value="9/11">Major</option>
+                                                <option value="9/b11">minor</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <select id="thirteen_select" class="validate browser-default tooltiped label_select_thirteen" data-position="top" data-tooltip="13th">
+                                                <option value="none"></option>
+                                                <option value="11/13">Major</option>
+                                                <option value="11/b13">minor</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <a class="btn-large btnPlayChord white-text pink label_play_chord cursor" style="width: 100%;">Play chord</a>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input placeholder="C,G#,Bb,D" id="custom_notes" data-position="top" data-tooltip="<p>Use letter separate by comas like:<br> C,E,G#,Ab,C</p>" type="text" class="validate tooltiped label_tooltip_input_custom">
+                                            <label for="custom_notes">Custom notes</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <a class="btn-large btnPlayNotes white-text orange label_play_custom cursor" style="width: 100%;">Play custom notes</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="view10" class="row">
+                        <div class='colo s12'>
+                            <table class="tb_views striped highlight centered">
+                                <thead>
+                                    <tr>
+                                        <th class="label_leaderboard_viewer">Viewer</th>
+                                        <th>Bits</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="note10" class="row">
+                        <div class='colo s12'>
+                            <table class="tb_values striped highlight centered">
+                                <thead>
+                                    <tr>
+                                        <th>Notes</th>
+                                        <th class="label_leaderboard_times">Times</th>
+                                        <th class="label_leaderboard_spend">Bits used</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="bit10" class="row">
+                        <div class='colo s12'>
+                            <table class="tb_bits striped highlight centered">
+                                <thead>
+                                    <tr>
+                                        <th>Bits</th>
+                                        <th class="label_leaderboard_times">Times</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="piano">
+            <h4 class="msg_res"></h4><br>
+            <div class="piano-container">
+                <div class="piano-keys">
+                    <div class="piano-white piano-A2" data-note="A2">A2</div>
+                    <div class="piano-black" data-note="BB2"><div class="piano-black-raised piano-BB2 piano-A#2">Bb2 A#2</div></div>
+                    <div class="piano-white piano-B2" data-note="B2">B2</div>
+                    <div class="piano-white piano-C3" data-note="C3">C3</div>
+                    <div class="piano-black" data-note="DB3"><div class="piano-black-raised piano-DB3 piano-C#3">Db3 C#3</div></div>
+                    <div class="piano-white piano-D3" data-note="D3">D3</div>
+                    <div class="piano-black" data-note="EB3"><div class="piano-black-raised piano-EB3 piano-D#3">Eb3 D#3</div></div>
+                    <div class="piano-white piano-E3" data-note="E3">E3</div>
+                    <div class="piano-white piano-F3" data-note="F3">F3</div>
+                    <div class="piano-black" data-note="GB3"><div class="piano-black-raised piano-GB3 piano-F#3">Gb3 F#3</div></div>
+                    <div class="piano-white piano-G3" data-note="G3">G3</div>
+                    <div class="piano-black" data-note="AB3"><div class="piano-black-raised piano-AB3 piano-G#3">Ab3 G#3</div></div>
+                    <div class="piano-white piano-A3" data-note="A3">A3</div>
+                    <div class="piano-black" data-note="BB3"><div class="piano-black-raised piano-BB3 piano-A#3">Bb3 A#3</div></div>
+                    <div class="piano-white piano-B3" data-note="B3">B3</div>
+                    <div class="piano-white piano-C4" data-note="C4">C4</div>
+                    <div class="piano-black" data-note="DB4"><div class="piano-black-raised piano-DB4 piano-C#4">Db4 C#4</div></div>
+                    <div class="piano-white piano-D4" data-note="D4">D4</div>
+                    <div class="piano-black" data-note="EB4"><div class="piano-black-raised piano-EB4 piano-D#4">Eb4 D#4</div></div>
+                    <div class="piano-white piano-E4" data-note="E4">E4</div>
+                    <div class="piano-white piano-F4" data-note="F4">F4</div>
+                    <div class="piano-black" data-note="GB4"><div class="piano-black-raised piano-GB4 piano-F#4">Gb4 F#4</div></div>
+                    <div class="piano-white piano-G4" data-note="G4">G4</div>
+                    <div class="piano-black" data-note="AB4"><div class="piano-black-raised piano-AB4 piano-G#4">Ab4 G#4</div></div>
+                    <div class="piano-white piano-A4" data-note="A4">A4</div>
+                    <div class="piano-black" data-note="BB4"><div class="piano-black-raised piano-BB4 piano-A#4">Bb4 A#4</div></div>
+                    <div class="piano-white piano-B4" data-note="B4">B4</div>
+                    <div class="piano-white piano-C5" data-note="C5">C5</div>
+                </div>
+            </div>
+        </div>
+        <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+        <!-- If you use any external libraries, such as jQuery, you must include
+            them as part of your extension.  Twitch does not allow extensions to link
+            to external libraries. -->
+        <script src="js/jquery-2.2.4.js" type="text/javascript"></script>
+        <script src="js/jquery-ui-1.10.3.custom.js" type="text/javascript"></script>
+        <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+        <script src="js/materialize.js" type="text/javascript"></script>
+        <script src="js/hmac-sha256.js" type="text/javascript"></script>
+        <script src="js/enc-base64.js" type="text/javascript"></script>
+        <script src="js/jwt.js" type="text/javascript"></script>
+        <script src="js/sanitize.js" type="text/javascript"></script>
+        <script src="js/lang.js" type="text/javascript"></script>
+        <script src="js/overlay.js" type="text/javascript"></script>
+    </body>
+</html>

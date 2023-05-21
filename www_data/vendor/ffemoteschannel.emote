@@ -1,0 +1,244 @@
+{
+    "room": {
+        "_id": 266338,
+        "css": null,
+        "display_name": "eladolo",
+        "id": "eladolo",
+        "is_group": false,
+        "mod_urls": null,
+        "moderator_badge": null,
+        "set": 266350,
+        "twitch_id": 120539509,
+        "user_badges": {}
+    },
+    "sets": {
+        "266350": {
+            "_type": 1,
+            "css": null,
+            "description": null,
+            "icon": null,
+            "id": 266350,
+            "title": "Channel: eladolo"
+        }
+    },
+    "emotes": [
+        {
+            "css": null,
+            "height": 32,
+            "hidden": false,
+            "id": 246604,
+            "margins": null,
+            "modifier": false,
+            "name": "monkaS",
+            "offset": null,
+            "owner": {
+                "_id": 246416,
+                "display_name": "lEpikSl",
+                "name": "lepiksl"
+            },
+            "public": true,
+            "urls": {
+                "1": "//cdn.frankerfacez.com/emoticon/246604/1",
+                "2": "//cdn.frankerfacez.com/emoticon/246604/2",
+                "4": "//cdn.frankerfacez.com/emoticon/246604/4"
+            },
+            "width": 32
+        },
+        {
+            "css": null,
+            "height": 28,
+            "hidden": false,
+            "id": 247487,
+            "margins": null,
+            "modifier": false,
+            "name": "monkaGyn",
+            "offset": null,
+            "owner": {
+                "_id": 214950,
+                "display_name": "Mazzo_tv",
+                "name": "mazzo_tv"
+            },
+            "public": true,
+            "urls": {
+                "1": "//cdn.frankerfacez.com/emoticon/247487/1",
+                "2": "//cdn.frankerfacez.com/emoticon/247487/2",
+                "4": "//cdn.frankerfacez.com/emoticon/247487/4"
+            },
+            "width": 28
+        },
+        {
+            "css": null,
+            "height": 30,
+            "hidden": false,
+            "id": 249981,
+            "margins": null,
+            "modifier": false,
+            "name": "happyShirt",
+            "offset": null,
+            "owner": {
+                "_id": 255097,
+                "display_name": "eladolo",
+                "name": "eladolo"
+            },
+            "public": true,
+            "urls": {
+                "1": "//cdn.frankerfacez.com/emoticon/249981/1",
+                "2": "//cdn.frankerfacez.com/emoticon/249981/2",
+                "4": "//cdn.frankerfacez.com/emoticon/249981/4"
+            },
+            "width": 32
+        },
+        {
+            "css": null,
+            "height": 30,
+            "hidden": false,
+            "id": 249980,
+            "margins": null,
+            "modifier": false,
+            "name": "chiakInside",
+            "offset": null,
+            "owner": {
+                "_id": 255097,
+                "display_name": "eladolo",
+                "name": "eladolo"
+            },
+            "public": true,
+            "urls": {
+                "1": "//cdn.frankerfacez.com/emoticon/249980/1",
+                "2": "//cdn.frankerfacez.com/emoticon/249980/2",
+                "4": "//cdn.frankerfacez.com/emoticon/249980/4"
+            },
+            "width": 32
+        },
+        {
+            "css": null,
+            "height": 27,
+            "hidden": false,
+            "id": 144021,
+            "margins": null,
+            "modifier": false,
+            "name": "Howlformoon",
+            "offset": null,
+            "owner": {
+                "_id": 70344,
+                "display_name": "Nekoloveheart",
+                "name": "nekoloveheart"
+            },
+            "public": true,
+            "urls": {
+                "1": "//cdn.frankerfacez.com/emoticon/144021/1",
+                "2": "//cdn.frankerfacez.com/emoticon/144021/2",
+                "4": "//cdn.frankerfacez.com/emoticon/144021/4"
+            },
+            "width": 13
+        },
+        {
+            "css": null,
+            "height": 32,
+            "hidden": false,
+            "id": 15860,
+            "margins": null,
+            "modifier": false,
+            "name": "WorstRecord",
+            "offset": null,
+            "owner": {
+                "_id": 2294,
+                "display_name": "Frogburt",
+                "name": "frogburt"
+            },
+            "public": true,
+            "urls": {
+                "1": "//cdn.frankerfacez.com/emoticon/15860/1"
+            },
+            "width": 32
+        },
+        {
+            "css": null,
+            "height": 20,
+            "hidden": false,
+            "id": 227600,
+            "margins": null,
+            "modifier": false,
+            "name": "MusicTime",
+            "offset": null,
+            "owner": {
+                "_id": 114060,
+                "display_name": "Totallllyy",
+                "name": "totallllyy"
+            },
+            "public": true,
+            "urls": {
+                "1": "//cdn.frankerfacez.com/emoticon/227600/1",
+                "2": "//cdn.frankerfacez.com/emoticon/227600/2",
+                "4": "//cdn.frankerfacez.com/emoticon/227600/4"
+            },
+            "width": 58
+        },
+        {
+            "css": null,
+            "height": 20,
+            "hidden": false,
+            "id": 62478,
+            "margins": null,
+            "modifier": false,
+            "name": "Derg!",
+            "offset": null,
+            "owner": {
+                "_id": 22301,
+                "display_name": "musicgeek13",
+                "name": "musicgeek13"
+            },
+            "public": true,
+            "urls": {
+                "1": "//cdn.frankerfacez.com/emoticon/62478/1",
+                "2": "//cdn.frankerfacez.com/emoticon/62478/2",
+                "4": "//cdn.frankerfacez.com/emoticon/62478/4"
+            },
+            "width": 52
+        },
+        {
+            "css": null,
+            "height": 31,
+            "hidden": false,
+            "id": 42022,
+            "margins": null,
+            "modifier": false,
+            "name": "AwaitedThisDay",
+            "offset": null,
+            "owner": {
+                "_id": 565,
+                "display_name": "PotatoHandle",
+                "name": "potatohandle"
+            },
+            "public": true,
+            "urls": {
+                "1": "//cdn.frankerfacez.com/emoticon/42022/1",
+                "2": "//cdn.frankerfacez.com/emoticon/42022/2",
+                "4": "//cdn.frankerfacez.com/emoticon/42022/4"
+            },
+            "width": 32
+        },
+        {
+            "css": null,
+            "height": 32,
+            "hidden": false,
+            "id": 209496,
+            "margins": null,
+            "modifier": false,
+            "name": "DoucheMario",
+            "offset": null,
+            "owner": {
+                "_id": 69308,
+                "display_name": "ladyoliver12",
+                "name": "ladyoliver12"
+            },
+            "public": true,
+            "urls": {
+                "1": "//cdn.frankerfacez.com/emoticon/209496/1",
+                "2": "//cdn.frankerfacez.com/emoticon/209496/2",
+                "4": "//cdn.frankerfacez.com/emoticon/209496/4"
+            },
+            "width": 20
+        }
+    ]
+}

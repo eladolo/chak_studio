@@ -1,0 +1,227 @@
+body {
+    display: flex;
+    min - height: 100 vh;
+    flex - direction: column;
+    overflow: hidden !important;
+}
+
+main {
+    flex: 1 0 auto;
+    margin-top: 75px;
+    margin-bottom: 155px;
+}
+
+nav, footer{
+	z-index: 50 !important;
+	border-radius: 2px;
+	background-color: rgba(0,0,0,0.6) !important;
+	background-image: url("/img/bg.png") !important;
+	background-size: cover !important;
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-bottom: solid rgba(255,255,255,0.2) 2px;
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border-top: solid rgba(255,255,255,0.2) 2px;
+}
+
+hr{
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tr_header{
+	background-color: rgba(153, 204, 0, 19);
+}
+.tr_header th{
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.cursor{
+    cursor: pointer !important;
+}
+
+.mandatory{
+	border-left: solid orange !important;
+	border-radius: 8px !important;
+}
+
+.active_nav{
+	background-color: rgba(0, 0, 0, 0.9);
+}
+.active_nav a{
+	font-weight: bolder !important;
+	color: white !important;
+}
+
+#settings_user_nav a{
+	color: black;
+	min-height: 50px;
+}
+
+.bkImg{
+	position: fixed;
+	top: 50px;
+	left: 0;
+}
+
+.windowBG{
+	background-image: url("/img/window.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 600px !important;
+	height: 718px;
+
+	left-padding: 75px !important;
+	margin: 0 auto;
+	margin-bottom: 105px;
+	padding: 35px;
+	text-align: justify;
+}
+.itemGameIMG{
+	width:128px;
+	position: relative;
+	top: 50px;
+	left: 0px;
+}
+.itemGameTitle{
+	position: relative;
+	float: right;
+	left: -35px;
+	top: 50px;
+}
+.itemGameTXT{
+	position: relative;
+	top: 70px;
+}
+.btnMore{
+	background-image: url("/img/btnBuy.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 280px !important;
+	height: 180px;
+	position: relative;
+    top: 70px;
+    left: 120px;
+    padding: 35px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.windowBGS{
+	background-image: url("/img/windowShop.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 480px !important;
+	height: 410px;
+
+	padding-left: 25px !important;
+	margin: 0 auto;
+	margin-top: 35px;
+}
+
+.windowBGSItem{
+	background-image: url("/img/itemShop.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 280px !important;
+	height: 450px;
+}
+.itemStoreIMG{
+	width:128px;
+	height:128px;
+	position: relative;
+	top: 100px;
+}
+.itemStoreTXT{
+	position: relative;
+	top: 170px;
+}
+.btnBuy{
+	background-image: url("/img/btnBuy.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 280px !important;
+	height: 180px;
+	position: relative;
+    top: -350px;
+    left: 300px;
+    padding: 35px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btnBuy:hover{
+	height: 190px;
+	opacity: 1;
+}
+
+.modalContentPos{
+	padding-left:45px !important;
+	padding-top: 10px !important;
+	height: 200px !important;
+	width: 210px !important;
+	overflow:hidden !important;
+}
+
+.windowBGContacto{
+	background-image: url("/img/window.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 480px !important;
+	height: 580px;
+	text-align: center;
+	padding: 25px;
+	margin: 0 auto;
+	margin-top: 35px;
+}
+
+.modal ul a{
+	border: none !important;
+}
+
+.modal .indicator{
+	background-color: rgba(0,0,0,0) !important;
+}
+
+#paypalModal .btnSend{
+	background-image: url("/img/btn.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: 0px;
+    background-position-y: -35px;
+	width: 120px !important;
+	height: 50px !important;
+	cursor: pointer;
+    padding-left: 40px;
+    padding-top: 1px;
+    margin: 0 auto;
+}
+
+#paypalModal .btnSend:hover{
+	opacity: 0.8;
+}
+
+#paypalModal .btnSend:active{
+	opacity: 1;
+	color: white;
+}
+
+a{
+	color: white;
+}
+
+

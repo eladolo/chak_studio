@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>pupface panel</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/pupface100x100.png" />
+        <link href="//fonts.googleapis.com/css?family=Open+Sans|Oswald|Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/panel.css">
+    </head>
+    <body class="form_view">
+        <div id="app" class="full-height"></div>
+        <div class="row">
+            <div class="col s12">
+                <div class="spin" style="text-align:center;">
+                    <img src="img/pupface100x100.png" class="spin_img circle" style="width:64px; box-shadow: 2px 2px #000;" />
+                </div>
+            </div>
+            <div class="col s12">
+                <ul class="tabs" style="overflow: hidden;">
+                    <li class="tab col s3"><a href="#view10" class="label_leaderboard_tab_viwer10">Viewer 10</a></li>
+                    <li class="tab col s3"><a href="#pup10" class="label_leaderboard_tab_pup10">Pup 10</a></li>
+                    <li class="tab col s3"><a href="#bit10" class="label_leaderboard_tab_bits10">Bits 10</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_overflow">
+            <div id="view10" class="row">
+                <div class='colo s12'>
+                    <table class="tb_views striped highlight centered">
+                        <thead>
+                            <tr>
+                                <th class="label_leaderboard_viewer">Viewer</th>
+                                <th>Bits</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="pup10" class="row">
+                <div class='colo s12'>
+                    <table class="tb_pups striped highlight centered">
+                        <thead>
+                            <tr>
+                                <th>Pupface</th>
+                                <th class="label_leaderboard_times">Times</th>
+                                <th class="label_leaderboard_spend">Bits used</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="bit10" class="row">
+                <div class='colo s12'>
+                    <table class="tb_bits striped highlight centered">
+                        <thead>
+                            <tr>
+                                <th>Bits</th>
+                                <th class="label_leaderboard_times">Times</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+        <!-- If you use any external libraries, such as jQuery, you must include
+            them as part of your extension.  Twitch does not allow extensions to link
+            to external libraries. -->
+        <script src="js/jquery-2.2.4.js" type="text/javascript"></script>
+        <script src="js/jquery-ui-1.10.3.custom.js" type="text/javascript"></script>
+        <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+        <script src="js/materialize.js" type="text/javascript"></script>
+        <script src="js/hmac-sha256.js" type="text/javascript"></script>
+        <script src="js/enc-base64.js" type="text/javascript"></script>
+        <script src="js/jwt.js" type="text/javascript"></script>
+        <script src="js/lang.js" type="text/javascript"></script>
+        <script src="js/panel.js" type="text/javascript"></script>
+    </body>
+</html>

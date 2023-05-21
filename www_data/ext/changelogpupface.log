@@ -1,0 +1,32 @@
+- As brodcaster you can´t cheer your own channel, so only the preview option will be available on stream overlay.
+
+-Configure each of the pupface(9) on the configuration panel:
+ -global switch to turn on/off the extension from panel
+ -position of the pupface button on video overlay
+
+-For each pupface:
+ - amount of bits
+ - confetti fx on/off
+ - image
+ - title
+ - chat response after success bit transaction
+ - font
+ - font color
+ - glow light color
+ - glow dark color
+ - alert position
+ - fadein animation
+ - fadeout animation
+ - type of image
+ - shape of image
+ - audio
+ - audio volume
+ - alert timeout
+ - individual switch to power on/off each alert
+
+Once the stream start:
+
+You will have a button on the video overlay with the position configure, and this will open a modal with the active pupfaces, where they can be preview or send it for bits.
+In the same modal you will have stat of usage.
+
+10 am - 2 pm mexico city can be test on stream

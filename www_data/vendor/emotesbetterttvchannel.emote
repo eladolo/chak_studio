@@ -1,0 +1,821 @@
+{
+    "emotes": [
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "OhMyGoodness",
+            "url": "//cdn.betterttv.net/emote/54fa925e01e468494b85b54d/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "PancakeMix",
+            "url": "//cdn.betterttv.net/emote/54fa927801e468494b85b54e/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "PedoBear",
+            "url": "//cdn.betterttv.net/emote/54fa928f01e468494b85b54f/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "PokerFace",
+            "url": "//cdn.betterttv.net/emote/54fa92a701e468494b85b550/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "RageFace",
+            "url": "//cdn.betterttv.net/emote/54fa92d701e468494b85b552/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "RebeccaBlack",
+            "url": "//cdn.betterttv.net/emote/54fa92ee01e468494b85b553/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": ":tf:",
+            "url": "//cdn.betterttv.net/emote/54fa8f1401e468494b85b537/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "aPliS",
+            "url": "//cdn.betterttv.net/emote/54fa8f4201e468494b85b538/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "CiGrip",
+            "url": "//cdn.betterttv.net/emote/54fa8fce01e468494b85b53c/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "CHAccepted",
+            "url": "//cdn.betterttv.net/emote/54fa8fb201e468494b85b53b/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "FuckYea",
+            "url": "//cdn.betterttv.net/emote/54fa90d601e468494b85b544/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "DatSauce",
+            "url": "//cdn.betterttv.net/emote/54fa903b01e468494b85b53f/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "ForeverAlone",
+            "url": "//cdn.betterttv.net/emote/54fa909b01e468494b85b542/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "GabeN",
+            "url": "//cdn.betterttv.net/emote/54fa90ba01e468494b85b543/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "HailHelix",
+            "url": "//cdn.betterttv.net/emote/54fa90f201e468494b85b545/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "HerbPerve",
+            "url": "//cdn.betterttv.net/emote/54fa913701e468494b85b546/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "iDog",
+            "url": "//cdn.betterttv.net/emote/54fa919901e468494b85b548/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "rStrike",
+            "url": "//cdn.betterttv.net/emote/54fa930801e468494b85b554/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "ShoopDaWhoop",
+            "url": "//cdn.betterttv.net/emote/54fa932201e468494b85b555/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "SwedSwag",
+            "url": "//cdn.betterttv.net/emote/54fa9cc901e468494b85b565/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 30,
+            "imageType": "png",
+            "regex": "M&Mjc",
+            "url": "//cdn.betterttv.net/emote/54fab45f633595ca4c713abc/1x",
+            "width": 36
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "bttvNice",
+            "url": "//cdn.betterttv.net/emote/54fab7d2633595ca4c713abf/1x",
+            "width": 42
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "TopHam",
+            "url": "//cdn.betterttv.net/emote/54fa934001e468494b85b556/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "TwaT",
+            "url": "//cdn.betterttv.net/emote/54fa935601e468494b85b557/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "WhatAYolk",
+            "url": "//cdn.betterttv.net/emote/54fa93d001e468494b85b559/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "WatChuSay",
+            "url": "//cdn.betterttv.net/emote/54fa99b601e468494b85b55d/1x",
+            "width": 28
+        },
+        {
+            "channel": "night",
+            "emoticon_set": "night",
+            "height": 28,
+            "imageType": "png",
+            "regex": "Blackappa",
+            "url": "//cdn.betterttv.net/emote/54faa50d01e468494b85b578/1x",
+            "width": 28
+        },
+        {
+            "channel": "night",
+            "emoticon_set": "night",
+            "height": 28,
+            "imageType": "png",
+            "regex": "DogeWitIt",
+            "url": "//cdn.betterttv.net/emote/54faa52f01e468494b85b579/1x",
+            "width": 28
+        },
+        {
+            "channel": "night",
+            "emoticon_set": "night",
+            "height": 28,
+            "imageType": "png",
+            "regex": "BadAss",
+            "url": "//cdn.betterttv.net/emote/54faa4f101e468494b85b577/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "SavageJerky",
+            "url": "//cdn.betterttv.net/emote/54fb603201abde735115ddb5/1x",
+            "width": 28
+        },
+        {
+            "channel": "night",
+            "emoticon_set": "night",
+            "height": 28,
+            "imageType": "png",
+            "regex": "Kaged",
+            "url": "//cdn.betterttv.net/emote/54fbf11001abde735115de66/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "HHydro",
+            "url": "//cdn.betterttv.net/emote/54fbef6601abde735115de57/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 30,
+            "imageType": "png",
+            "regex": "TaxiBro",
+            "url": "//cdn.betterttv.net/emote/54fbefeb01abde735115de5b/1x",
+            "width": 87
+        },
+        {
+            "channel": null,
+            "height": 30,
+            "imageType": "png",
+            "regex": "BroBalt",
+            "url": "//cdn.betterttv.net/emote/54fbf00a01abde735115de5c/1x",
+            "width": 46
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "ButterSauce",
+            "url": "//cdn.betterttv.net/emote/54fbf02f01abde735115de5d/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "BaconEffect",
+            "url": "//cdn.betterttv.net/emote/54fbf05a01abde735115de5e/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "SuchFraud",
+            "url": "//cdn.betterttv.net/emote/54fbf07e01abde735115de5f/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "CandianRage",
+            "url": "//cdn.betterttv.net/emote/54fbf09c01abde735115de61/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "She'llBeRight",
+            "url": "//cdn.betterttv.net/emote/54fbefc901abde735115de5a/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "OhhhKee",
+            "url": "//cdn.betterttv.net/emote/54fbefa901abde735115de59/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "D:",
+            "url": "//cdn.betterttv.net/emote/55028cd2135896936880fdd7/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 40,
+            "imageType": "png",
+            "regex": "SexPanda",
+            "url": "//cdn.betterttv.net/emote/5502874d135896936880fdd2/1x",
+            "width": 36
+        },
+        {
+            "channel": null,
+            "height": 20,
+            "imageType": "png",
+            "regex": "(poolparty)",
+            "url": "//cdn.betterttv.net/emote/5502883d135896936880fdd3/1x",
+            "width": 20
+        },
+        {
+            "channel": null,
+            "height": 20,
+            "imageType": "png",
+            "regex": ":'(",
+            "url": "//cdn.betterttv.net/emote/55028923135896936880fdd5/1x",
+            "width": 20
+        },
+        {
+            "channel": null,
+            "height": 20,
+            "imageType": "png",
+            "regex": "(puke)",
+            "url": "//cdn.betterttv.net/emote/550288fe135896936880fdd4/1x",
+            "width": 20
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "bttvWink",
+            "url": "//cdn.betterttv.net/emote/550292c0135896936880fdef/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "bttvAngry",
+            "url": "//cdn.betterttv.net/emote/550291a3135896936880fde3/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "bttvConfused",
+            "url": "//cdn.betterttv.net/emote/550291be135896936880fde4/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "bttvCool",
+            "url": "//cdn.betterttv.net/emote/550291d4135896936880fde5/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "bttvHappy",
+            "url": "//cdn.betterttv.net/emote/55029200135896936880fde7/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "bttvSad",
+            "url": "//cdn.betterttv.net/emote/5502925d135896936880fdea/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "bttvSleep",
+            "url": "//cdn.betterttv.net/emote/55029272135896936880fdeb/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "bttvSurprised",
+            "url": "//cdn.betterttv.net/emote/55029288135896936880fdec/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "bttvTongue",
+            "url": "//cdn.betterttv.net/emote/5502929b135896936880fded/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "bttvUnsure",
+            "url": "//cdn.betterttv.net/emote/550292ad135896936880fdee/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "bttvGrin",
+            "url": "//cdn.betterttv.net/emote/550291ea135896936880fde6/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "bttvHeart",
+            "url": "//cdn.betterttv.net/emote/55029215135896936880fde8/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "bttvTwink",
+            "url": "//cdn.betterttv.net/emote/55029247135896936880fde9/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "VisLaud",
+            "url": "//cdn.betterttv.net/emote/550352766f86a5b26c281ba2/1x",
+            "width": 28
+        },
+        {
+            "channel": "night",
+            "emoticon_set": "night",
+            "height": 28,
+            "imageType": "gif",
+            "regex": "(chompy)",
+            "url": "//cdn.betterttv.net/emote/550b225fff8ecee922d2a3b2/1x",
+            "width": 28
+        },
+        {
+            "channel": "night",
+            "emoticon_set": "night",
+            "height": 28,
+            "imageType": "png",
+            "regex": "SoSerious",
+            "url": "//cdn.betterttv.net/emote/5514afe362e6bd0027aede8a/1x",
+            "width": 28
+        },
+        {
+            "channel": "night",
+            "emoticon_set": "night",
+            "height": 28,
+            "imageType": "png",
+            "regex": "BatKappa",
+            "url": "//cdn.betterttv.net/emote/550b6b07ff8ecee922d2a3e7/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "KaRappa",
+            "url": "//cdn.betterttv.net/emote/550b344bff8ecee922d2a3c1/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 30,
+            "imageType": "png",
+            "regex": "YetiZ",
+            "url": "//cdn.betterttv.net/emote/55189a5062e6bd0027aee082/1x",
+            "width": 60
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "miniJulia",
+            "url": "//cdn.betterttv.net/emote/552d2fc2236a1aa17a996c5b/1x",
+            "width": 28
+        },
+        {
+            "channel": "night",
+            "emoticon_set": "night",
+            "height": 28,
+            "imageType": "png",
+            "regex": "motnahP",
+            "url": "//cdn.betterttv.net/emote/55288e390fa35376704a4c7a/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "sosGame",
+            "url": "//cdn.betterttv.net/emote/553b48a21f145f087fc15ca6/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "CruW",
+            "url": "//cdn.betterttv.net/emote/55471c2789d53f2d12781713/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "RarePepe",
+            "url": "//cdn.betterttv.net/emote/555015b77676617e17dd2e8e/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "iamsocal",
+            "url": "//cdn.betterttv.net/emote/54fbef8701abde735115de58/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "haHAA",
+            "url": "//cdn.betterttv.net/emote/555981336ba1901877765555/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "FeelsBirthdayMan",
+            "url": "//cdn.betterttv.net/emote/55b6524154eefd53777b2580/1x",
+            "width": 19
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "RonSmug",
+            "url": "//cdn.betterttv.net/emote/55f324c47f08be9f0a63cce0/1x",
+            "width": 21
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "KappaCool",
+            "url": "//cdn.betterttv.net/emote/560577560874de34757d2dc0/1x",
+            "width": 22
+        },
+        {
+            "channel": null,
+            "height": 32,
+            "imageType": "png",
+            "regex": "Zappa",
+            "url": "//cdn.betterttv.net/emote/5622aaef3286c42e57d8e4ab/1x",
+            "width": 32
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "BasedGod",
+            "url": "//cdn.betterttv.net/emote/566c9eeb65dbbdab32ec052b/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "bUrself",
+            "url": "//cdn.betterttv.net/emote/566c9f3b65dbbdab32ec052e/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "ConcernDoge",
+            "url": "//cdn.betterttv.net/emote/566c9f6365dbbdab32ec0532/1x",
+            "width": 25
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "FapFapFap",
+            "url": "//cdn.betterttv.net/emote/566c9f9265dbbdab32ec0538/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 30,
+            "imageType": "png",
+            "regex": "FeelsBadMan",
+            "url": "//cdn.betterttv.net/emote/566c9fc265dbbdab32ec053b/1x",
+            "width": 30
+        },
+        {
+            "channel": null,
+            "height": 30,
+            "imageType": "png",
+            "regex": "FeelsGoodMan",
+            "url": "//cdn.betterttv.net/emote/566c9fde65dbbdab32ec053e/1x",
+            "width": 30
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "FireSpeed",
+            "url": "//cdn.betterttv.net/emote/566c9ff365dbbdab32ec0541/1x",
+            "width": 53
+        },
+        {
+            "channel": null,
+            "height": 34,
+            "imageType": "png",
+            "regex": "FishMoley",
+            "url": "//cdn.betterttv.net/emote/566ca00f65dbbdab32ec0544/1x",
+            "width": 56
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "Hhhehehe",
+            "url": "//cdn.betterttv.net/emote/566ca02865dbbdab32ec0547/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 34,
+            "imageType": "png",
+            "regex": "KKona",
+            "url": "//cdn.betterttv.net/emote/566ca04265dbbdab32ec054a/1x",
+            "width": 25
+        },
+        {
+            "channel": null,
+            "height": 40,
+            "imageType": "png",
+            "regex": "NaM",
+            "url": "//cdn.betterttv.net/emote/566ca06065dbbdab32ec054e/1x",
+            "width": 38
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "OhGod",
+            "url": "//cdn.betterttv.net/emote/566ca07965dbbdab32ec0552/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "PoleDoge",
+            "url": "//cdn.betterttv.net/emote/566ca09365dbbdab32ec0555/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "tehPoleCat",
+            "url": "//cdn.betterttv.net/emote/566ca11a65dbbdab32ec0558/1x",
+            "width": 21
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "AngelThump",
+            "url": "//cdn.betterttv.net/emote/566ca1a365dbbdab32ec055b/1x",
+            "width": 84
+        },
+        {
+            "channel": null,
+            "height": 35,
+            "imageType": "gif",
+            "regex": "SourPls",
+            "url": "//cdn.betterttv.net/emote/566ca38765dbbdab32ec0560/1x",
+            "width": 35
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "LuL",
+            "url": "//cdn.betterttv.net/emote/567b00c61ddbe1786688a633/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 30,
+            "imageType": "png",
+            "regex": "SaltyCorn",
+            "url": "//cdn.betterttv.net/emote/56901914991f200c34ffa656/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "FCreep",
+            "url": "//cdn.betterttv.net/emote/56d937f7216793c63ec140cb/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "VapeNation",
+            "url": "//cdn.betterttv.net/emote/56f5be00d48006ba34f530a4/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "ariW",
+            "url": "//cdn.betterttv.net/emote/56fa09f18eff3b595e93ac26/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "notsquishY",
+            "url": "//cdn.betterttv.net/emote/5709ab688eff3b595e93c595/1x",
+            "width": 24
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "FeelsAmazingMan",
+            "url": "//cdn.betterttv.net/emote/5733ff12e72c3c0814233e20/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "DuckerZ",
+            "url": "//cdn.betterttv.net/emote/573d38b50ffbf6cc5cc38dc9/1x",
+            "width": 37
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "SqShy",
+            "url": "//cdn.betterttv.net/emote/59cf182fcbe2693d59d7bf46/1x",
+            "width": 28
+        },
+        {
+            "channel": null,
+            "height": 28,
+            "imageType": "png",
+            "regex": "Wowee",
+            "url": "//cdn.betterttv.net/emote/58d2e73058d8950a875ad027/1x",
+            "width": 28
+        }
+    ],
+    "status": 200
+}

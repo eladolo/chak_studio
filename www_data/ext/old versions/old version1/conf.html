@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pupface configuration</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/pupface100x100.png" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/color-picker.css">
+        <link rel="stylesheet" href="css/conf.css">
+    </head>
+    <body>
+        <div id="app" class="full-height"></div>
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s3"><a href="#tiers"><i class="material-icons">art_track</i></a></li>
+                    <li class="tab col s3"><a href="#help"><i class="material-icons">help</i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="tiers">
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs tabs-fixed-width">
+                        <li class="tab col s3 tooltiped" data-tooltip="<p>Tier 1 <br><b class='red-text'>1</b> bit</p>"><a href="#tier1">T1</a></li>
+                        <li class="tab col s3 tooltiped" data-tooltip="<p>Tier 2 <br><b class='red-text'>10</b> bits</p>"><a href="#tier2">T2</a></li>
+                        <li class="tab col s3 tooltiped" data-tooltip="<p>Tier 3 <br><b class='red-text'>100</b> bits</p>"><a href="#tier3">T3</a></li>
+                        <li class="tab col s3 tooltiped" data-tooltip="<p>Tier 4 <br><b class='red-text'>1,000</b> bits</p>"><a href="#tier4">T4</a></li>
+                        <li class="tab col s3 tooltiped" data-tooltip="<p>Tier 5 <br><b class='red-text'>2,500</b> bits</p>"><a href="#tier5">T5</a></li>
+                        <li class="tab col s3 tooltiped" data-tooltip="<p>Tier 6 <br><b class='red-text'>5,000</b> bits</p>"><a href="#tier6">T6</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="tierClon" class="row form_fields hide">
+                <div class="col s12">
+                    <label for="tierClon_preview">Image</label>
+                </div>
+                <div class="col s12">
+                    <img src="img/pup1.gif" class="tierClon_preview circle" style="width:64px; height:64px;">
+                    <select id="tierClon_img_select" class="validate mandatory pup_select">
+                        <option value="img/pup1.gif">pup1</option>
+                        <option value="img/pup2.gif">pup2</option>
+                        <option value="img/pup3.gif">pup3</option>
+                        <option value="img/pup4.gif">pup4</option>
+                        <option value="img/pup5.gif">pup5</option>
+                        <option value="img/pup6.gif">pup6</option>
+                        <option value="">Custom</option>
+                    </select>
+                    <input placeholder="url img" id="tierClon_img" name="tierClon_img" type="text" class="validate imgChange checkIMG hide custom_img">
+                </div>
+                <div class="col s12">
+                    <label for="tierClon_body">Text</label>
+                    <input placeholder="text" name="tierClon_body" id="tierClon_body" type="text" class="validate">
+                </div>
+                <div class="col s6">
+                    <label for="tierClon_glow_light">glow light</label>
+                    <input id="tierClon_glow_light" name="tierClon_glow_light" type="text" class="setting" placeholder="#000000" value="#999900">
+                </div>
+                <div class="col s6">
+                    <label for="tierClon_glow_hard">glow hard</label>
+                    <input id="tierClon_glow_hard" name="tierClon_glow_hard" type="text" class="setting" placeholder="#000000" value="#ffff00">
+                </div>
+                <div class="input-field col s12">
+                    <select id="tierClon_position" class="validate mandatory">
+                        <option value="">---</option>
+                        <option value="center">Center</option>
+                        <option value="tleft">Top left</option>
+                        <option value="tright">Top right</option>
+                        <option value="bleft">Bottom left</option>
+                        <option value="bright">Bottom right</option>
+                    </select>
+                    <label>Position</label>
+                </div>
+                <div class="input-field col s6">
+                    <select id="tierClon_fadein" class="validate mandatory">
+                        <option value="">---</option>
+                        <option value="fadein">Fadein</option>
+                        <option value="slidedown">Slidedown</option>
+                    </select>
+                    <label>Animation fadein</label>
+                </div>
+                <div class="input-field col s6">
+                    <select id="tierClon_fadeout" class="validate mandatory">
+                        <option value="">---</option>
+                        <option value="fadeout">Fadeout</option>
+                        <option value="slideup">Slideup</option>
+                    </select>
+                    <label>Animation fadeout</label>
+                </div>
+                <div class="input-field col s6">
+                    <select id="tierClon_type_img" class="validate">
+                        <option value="">---</option>
+                        <option value="static">Static img</option>
+                        <option value="spin">Spin img</option>
+                    </select>
+                    <label>Type img</label>
+                </div>
+                <div class="input-field col s6">
+                    <select id="tierClon_shape_img" class="validate">
+                        <option value="">---</option>
+                        <option value="square">Square img</option>
+                        <option value="round">Round img</option>
+                    </select>
+                    <label>Shape img</label>
+                </div>
+                <div class="col s6">
+                    <label for ="tierClon_audio_url">Audio</label>
+                    <input placeholder="audio url" name="tierClon_audio_url" id="tierClon_audio_url" type="text" class="validate tooltiped checkAUDIO" data-tooltip="valid formats: <br>.mp3, .wav, .ogg" data-position="top">
+                </div>
+                    <label for ="tierClon_video_url">Youtube video</label>
+                <div class="col s6">
+                    <input placeholder="video id" name="tierClon_video_url" id="tierClon_video_url" type="text" class="validate tooltiped checkVIDEO" data-tooltip="only the youtube video id" data-position="top">
+                </div>
+                <div class="col s12">
+                    <div class="range-field">
+                        <label for ="tierClon_timer_time">Alert timeout</label>
+                        <input data-tooltip="alert timeout in seconds" data-position="top" name="tierClon_timer_time" id="tierClon_timer_time" type="range" class="validate tooltiped" min="1" max="20">
+                    </div>
+                </div>
+            </div>
+            <div id="tiers_content"></div>
+            <div class="row">
+                <div class="col s6">
+                    <a class="btnSave btn-large green" style="width:100%;">save</a>
+                </div>
+                <div class="col s6">
+                    <a class="btnReset btn-large red" style="width:100%;">reset</a>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="help">
+            <div class="col s12">
+                <h5>Requirements</h5>
+                <p>
+                    - Will to have a fun time xD<br>
+                </p>
+                <h5>Usage</h5>
+                <p>
+                    - Save your configuration on this panel.<br>
+
+                    - Let your viewers trigger the pupfaces.<br>
+                </p>
+            </div>
+        </div>
+        <div class="row" style="position:inherit ; bottom: 0; right: 25px;">
+            <div class="col s12">
+                <small style="float:right; margin:5px;padding-right: 20;">* If you find useful this extension your support it's very welcome <a href="https://streamlabs.com/eladolo" target="_blank"><img src="img/TopHamBTTV.png"  class="tooltiped" data-tooltip="Thxs" data-position="top" alt="TopHam" /></a></small>
+            </div>
+        </div>
+        <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+        <!-- If you use any external libraries, such as jQuery, you must include
+          them as part of your extension.  Twitch does not allow extensions to link
+          to external libraries. -->
+        <script src="js/jquery-2.2.4.js" type="text/javascript"></script>
+        <script src="js/jquery-ui-1.10.3.custom.js" type="text/javascript"></script>
+        <script src="js/materialize.js" type="text/javascript"></script>
+        <script src="js/color-picker.js" type="text/javascript"></script>
+        <script src="js/hmac-sha256.js" type="text/javascript"></script>
+        <script src="js/enc-base64.js" type="text/javascript"></script>
+        <script src="js/jwt.js" type="text/javascript"></script>
+        <script src="js/alerts.js" type="text/javascript"></script>
+        <script src="js/conf.js" type="text/javascript"></script>
+    </body>
+</html>

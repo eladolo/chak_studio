@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>kittyface overlay</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/kittyface100x100.png" />
+        <link href="//fonts.googleapis.com/css?family=Open+Sans|Abril+Fatface|Josefin+Slab|Sedgwick+Ave|Acme|Anton|Arvo|Dancing+Script|Lato|Lora|Merriweather|Pacifico|Questrial|Saira+Extra+Condensed|Sedgwick+Ave|Sedgwick+Ave+Display|Shadows+Into+Light|Oswald|Material+Icons|Mansalva|Turret+Road|Amatic+SC|Caveat|Luckiest+Guy|Bangers" rel="stylesheet">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/magic.css">
+        <link rel="stylesheet" href="css/overlay.css">
+    </head>
+    <body class="form_view">
+        <svg width="192" height="192">
+            <defs>
+                <clipPath id="heart_svg" class="glow" style="width:192px;">
+                    <polygon points="94 192,218 98,231 56,221 30,194 28,144 43,120 56,102 67,79 53,49 31,9 23,-17 30,-25 55,-16 95"></polygon>
+                </clipPath>
+            </defs>
+        </svg>
+        <div id="app" class="full-height"></div>
+        <a class="btn-floating btn-large waves-effect waves-light orange lighten-1 btnShowModal hide-on-small-only hide" style="
+        width:56px; height:56px;"><img alt="kittyface" src="img/kittyface100x100.png" style="width:30px; top:5px;"></a>
+        <div class="overlay_custom">
+            <div class="content_img">
+                <h6 class="alert_body glow"></h6><br>
+                <div class="content_img_template">
+                    <div class="static hide">
+                        <img src="" class="glow_img" />
+                        <div class="shadow hide"></div>
+                    </div>
+                    <div class="spin hide">
+                        <img src="" class="spin_img" />
+                        <div class="shadow hide"></div>
+                    </div>
+                    <div class="spin_wheel hide">
+                        <img src="" class="spin_wheel_img" />
+                        <div class="shadow hide"></div>
+                    </div>
+                    <div class="magic_type hide">
+                        <img src="" class="magic_img" />
+                        <div class="shadow hide"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="config_modal" class="modal" style="max-height: 380px; background-color: rgba(255,255,255,0.5);">
+            <div class="modal-content">
+                <div class="col s12">
+                    <ul class="tabs" style="overflow: hidden;">
+                        <li class="tab col s3"><a href="#main" class="label_leaderboard_tab_kittyfaces">kittyfaces</a></li>
+                        <li class="tab col s3"><a href="#kitty10" class="label_leaderboard_tab_kitty10">kitty 10</a></li>
+                        <li class="tab col s3"><a href="#view10" class="label_leaderboard_tab_viwer10">Viewer 10</a></li>
+                        <li class="tab col s3"><a href="#bit10" class="label_leaderboard_tab_bits10">Bits 10</a></li>
+                    </ul>
+                </div>
+                <div class="content_overflow">
+                    <div id="main" class="row">
+                        <div class="col s12"><br></div>
+                        <div class="col s12" style="text-align: center;">
+                            <div id="content-preview">
+                            </div>
+                            <div id="content-send">
+                            </div>
+                        </div>
+                        <div class="col s12">
+                            <select id="preview_select" class="browser-default" style="font-size: 10pt; height: auto;">
+                                <option class="tab col s3 black-text label_overlay_preview" value="preview">Preview</a></option>
+                                <option class="tab col s3 black-text label_overlay_send" value="send">Send</a></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="view10" class="row">
+                        <div class='colo s12'>
+                            <table class="tb_views striped highlight centered">
+                                <thead>
+                                    <tr>
+                                        <th class="label_leaderboard_viewer">Viewer</th>
+                                        <th>Bits</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="kitty10" class="row">
+                        <div class='colo s12'>
+                            <table class="tb_kittys striped highlight centered">
+                                <thead>
+                                    <tr>
+                                        <th>kittyface</th>
+                                        <th class="label_leaderboard_times">Times</th>
+                                        <th class="label_leaderboard_spend">Bits used</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="bit10" class="row">
+                        <div class='colo s12'>
+                            <table class="tb_bits striped highlight centered">
+                                <thead>
+                                    <tr>
+                                        <th>Bits</th>
+                                        <th class="label_leaderboard_times">Times</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+        <!-- If you use any external libraries, such as jQuery, you must include
+            them as part of your extension.  Twitch does not allow extensions to link
+            to external libraries. -->
+        <script src="js/jquery-2.2.4.js" type="text/javascript"></script>
+        <script src="js/jquery-ui-1.10.3.custom.js" type="text/javascript"></script>
+        <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+        <script src="js/materialize.js" type="text/javascript"></script>
+        <script src="js/confetti.js" type="text/javascript"></script>
+        <script src="js/hmac-sha256.js" type="text/javascript"></script>
+        <script src="js/enc-base64.js" type="text/javascript"></script>
+        <script src="js/jwt.js" type="text/javascript"></script>
+        <script src="js/sanitize.js" type="text/javascript"></script>
+        <script src="js/alerts.js" type="text/javascript"></script>
+        <script src="js/lang.js" type="text/javascript"></script>
+        <script src="js/overlay.js" type="text/javascript"></script>
+    </body>
+</html>

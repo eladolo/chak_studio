@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Piano notes configuration</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/keyboard100x100.png" />
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans|Abril+Fatface|Josefin+Slab|Sedgwick+Ave|Acme|Anton|Arvo|Dancing+Script|Lato|Lora|Merriweather|Pacifico|Questrial|Saira+Extra+Condensed|Sedgwick+Ave|Sedgwick+Ave+Display|Shadows+Into+Light|Oswald|Material+Icons|Mansalva|Turret+Road|Amatic+SC|Caveat|Luckiest+Guy|Bangers">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/color-picker.css">
+        <link rel="stylesheet" href="css/conf.css">
+    </head>
+    <body>
+        <div id="app" class="full-height"></div>
+        <div class="form_view">
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs" style="overflow: hidden;">
+                        <li class="tab col s3"><a href="#tiers"><i class="material-icons">art_track</i></a></li>
+                        <li class="tab col s3"><a href="#help"><i class="material-icons">help</i></a></li>
+                        <li class="tab col s3"><a href="#feedback"><i class="material-icons">feedback</i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="tiers">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="switch">
+                            <label>
+                                <b class="label_config_offviewer">viewers view Off</b>
+                                <input type="checkbox" name="pianoon_power" id="pianoon_power" class="tooltiped label_config_poweroff_tooltiped" data-tooltip="poweroff" data-position="top" />
+                                <span class="lever"></span>
+                                <b class="label_config_onviewer">viewers view On</b>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col s12"><br></div>
+                    <div class="col s12 pianoon_posicion">
+                        <label for="viewer_btn" class="label_config_stream_pianoon_btn">Piano button on video overlay</label>
+                        <select id="viewer_btn" class="validate mandatory browser-default tooltiped label_select_config_position" data-position="top" data-tooltip="Position">
+                            <option value="">Position</option>
+                            <option value="center">Center</option>
+                            <option value="cleft">Center left</option>
+                            <option value="cright">Center right</option>
+                            <option value="tleft">Top left</option>
+                            <option value="tright">Top right</option>
+                            <option value="tcenter">Top center</option>
+                            <option value="bleft">Bottom left</option>
+                            <option value="bright">Bottom right</option>
+                            <option value="bcenter">Bottom center</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pianoon_on hide">
+                    <div class="row">
+                        <div class="col s12">
+                            <label for="scale_notes_bits" class="label_config_playnote_buttons">Play note buttons</label>
+                        </div>
+                        <div class="col s4">
+                            <select id="scale_notes_bits" class="setting browser-default tooltiped label_tooltip_scalenotes_bits" data-position="top" data-tooltip="Scale notes Bits">
+                                <option value="0">0 bits</option>
+                                <option value="1">1 bit</option>
+                                <option value="2">5 bits</option>
+                                <option value="3">10 bits</option>
+                                <option value="4">50 bits</option>
+                                <option value="5">100 bits</option>
+                                <option value="6">500 bits</option>
+                                <option value="7">1000 bits</option>
+                                <option value="8">2500 bits</option>
+                                <option value="9">5000 bits</option>
+                            </select>
+                        </div>
+                        <div class="col s4">
+                            <select id="chord_notes_bits" class="setting browser-default tooltiped label_tooltip_chordnotes_bits" data-position="top" data-tooltip="Chord notes Bits">
+                                <option value="0">0 bits</option>
+                                <option value="1">1 bit</option>
+                                <option value="2">5 bits</option>
+                                <option value="3">10 bits</option>
+                                <option value="4">50 bits</option>
+                                <option value="5">100 bits</option>
+                                <option value="6">500 bits</option>
+                                <option value="7">1000 bits</option>
+                                <option value="8">2500 bits</option>
+                                <option value="9">5000 bits</option>
+                            </select>
+                        </div>
+                        <div class="col s4">
+                            <select id="custom_notes_bits" class="setting browser-default tooltiped label_tooltip_customnotes_bits" data-position="top" data-tooltip="Custom notes Bits">
+                                <option value="0">0 bits</option>
+                                <option value="1">1 bit</option>
+                                <option value="2">5 bits</option>
+                                <option value="3">10 bits</option>
+                                <option value="4">50 bits</option>
+                                <option value="5">100 bits</option>
+                                <option value="6">500 bits</option>
+                                <option value="7">1000 bits</option>
+                                <option value="8">2500 bits</option>
+                                <option value="9">5000 bits</option>
+                            </select>
+                        </div>
+                        <div class="col s12">
+                            <label for="playnote_color" class="label_config_playnote_color">Play note color</label>
+                            <input id="playnote_color" name="playnote_color" type="text" class="setting" placeholder="#000000" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <a class="btnSave btn-large green label_config_btnsave" style="width:100%;">save</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="help">
+                <div class="col s12">
+                    <h5 class="label_config_requirements">Requirements</h5>
+                    <p class="label_config_requirements_content">
+                        - Bits actives in your channel if you want to active bits for viewers<br>
+                    </p>
+                    <h5 class="label_config_usage">Usage</h5>
+                    <p class="label_config_usage_content">
+                        - Save configuration on this panel.<br>
+                        - Trigger the piano from the dashboard or from the overlay, and/or let your viewers trigger the piano if you choose to do so.<br>
+                            . If your choose to let trigger piano for bits, if the bits process completed with success the notes will be send to all the viewers in channel and chat.<br>
+                    </p>
+                    <h5 class="label_config_credits">Credits</h5>
+                    <p class="label_config_credits_content" style="margin: 15px;">
+                        - <a href="https://jquery.com/" title="jquery" target="_blank">jquery</a><br>
+                        - <a href="https://materializecss.com/" title="materializecss" target="_blank">materializecss</a><br>
+                        - <a href="https://www.apache.org/" title="apache" target="_blank">apache</a><br>
+                        - <a href="https://php.net/" title="php" target="_blank">php</a><br>
+                        - <a href="https://www.flaticon.com/authors/xnimrodx" title="xnimrodx">Icons made by <b>xnimrodx</b> from https://www.flaticon.com/</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="feedback">
+                <div class="col s12">
+                    <div class="input-field col s12">
+                        <textarea id="feedback_text" class="materialize-textarea"></textarea>
+                        <label for="feedback_text" class="label_config_feedback_text">Feedback</label>
+                    </div>
+                    <div class="col s12">
+                        <a class="cursor btn green white-text btnSendFeedback label_config_a_send">send</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="position:inherit ; bottom: 0; right: 25px;">
+            <div class="col s12">
+                <small style="float:right; margin:5px;padding-right: 20;"><span class="label_config_support_text">* If you find useful this extension your support it's very welcome</span> <a href="https://streamlabs.com/eladolo" target="_blank"><img src="img/TopHamBTTV.png"  class="tooltiped" data-tooltip="Thxs" data-position="top" alt="TopHam" /></a></small>
+            </div>
+        </div>
+        <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+        <!-- If you use any external libraries, such as jQuery, you must include
+          them as part of your extension.  Twitch does not allow extensions to link
+          to external libraries. -->
+        <script src="js/jquery-2.2.4.js" type="text/javascript"></script>
+        <script src="js/jquery-ui-1.10.3.custom.js" type="text/javascript"></script>
+        <script src="js/materialize.js" type="text/javascript"></script>
+        <script src="js/color-picker.js" type="text/javascript"></script>
+        <script src="js/hmac-sha256.js" type="text/javascript"></script>
+        <script src="js/enc-base64.js" type="text/javascript"></script>
+        <script src="js/jwt.js" type="text/javascript"></script>
+        <script src="js/sanitize.js" type="text/javascript"></script>
+        <script src="js/lang.js" type="text/javascript"></script>
+        <script src="js/conf.js" type="text/javascript"></script>
+    </body>
+</html>

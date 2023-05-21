@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pupface overlay</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/pupface100x100.png" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/overlay.css">
+    </head>
+    <body>
+        <div id="app" class="full-height"></div>
+        <div class="overlay_custom">
+            <div class="content_img">
+                <h3 class="alert_body glow"></h3>
+                <img src="" class="static hide glow_img" />
+                <div class="spin hide">
+                    <img src="" class="spin_img" />
+                </div>
+            </div>
+        </div>
+        <div class="row form_view">
+            <div class="col s12">
+                <ul class="tabs" style="background: transparent !important;">
+                    <li class="tab col s3"><a href="#content-preview" class="white-text tooltiped" data-tooltip="Preview" data-position="top"><i class="material-icons">center_focus_weak</i></a></li>
+                    <li class="tab col s3"><a href="#content-send" class="white-text tooltiped" data-tooltip="Send" data-position="top"><i class="material-icons">send</i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row form_view">
+            <div class="col s12" style="text-align: center;">
+                <div id="content-preview">
+                </div>
+                <div id="content-send">
+                </div>
+            </div>
+        </div>
+        <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+        <!-- If you use any external libraries, such as jQuery, you must include
+          them as part of your extension.  Twitch does not allow extensions to link
+          to external libraries. -->
+        <script src="js/jquery-2.2.4.js" type="text/javascript"></script>
+        <script src="js/jquery-ui-1.10.3.custom.js" type="text/javascript"></script>
+        <script src="js/materialize.js" type="text/javascript"></script>
+        <script src="js/hmac-sha256.js" type="text/javascript"></script>
+        <script src="js/enc-base64.js" type="text/javascript"></script>
+        <script src="js/jwt.js" type="text/javascript"></script>
+        <script src="js/alerts.js" type="text/javascript"></script>
+        <script src="js/overlay.js" type="text/javascript"></script>
+    </body>
+</html>

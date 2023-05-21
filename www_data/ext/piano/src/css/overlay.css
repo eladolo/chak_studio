@@ -1,0 +1,175 @@
+/**
+    Copyright 2012 Michael Morris-Pearce
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+html,
+body {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 1em;
+    background-color: rgba(0,0,0,0,0) !important;
+}
+
+audio {
+    display: none;
+}
+
+.tabs{
+    background-color: transparent;
+}
+
+.tabs .tab {
+    line-height: unset;
+}
+
+.tabs .indicator{
+    background-color: #1e88e5;
+}
+
+.tabs .tab a{
+    color: #1e88e5 !important;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    color: black !important;
+}
+
+.piano-javascript {
+    border: 3px solid #f88;
+    display: block;
+}
+
+.piano {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1000;
+}
+
+.piano-container,
+.piano-javascript {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.piano-container {
+    text-align: center;
+    width: 100%;
+}
+
+.piano-keys {
+    word-spacing: 0;
+    letter-spacing: 0;
+    font-size: 0;
+}
+
+.piano-pedal {
+    margin: 10px;
+    color: #000000;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.piano-sustain {
+    color: black;
+}
+
+.piano-white,
+.piano-black {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    direction: ltr;
+    margin: 0;
+    padding: 0;
+}
+
+.piano-white,
+.piano-black-raised {
+    font-size: 18px;
+    border-radius: 2px;
+    border-color: #999;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.piano-white {
+    width: 64px;
+    height: 100px;
+    background-color: white;
+    z-index: 1;
+    color: #ffffff;
+    color: rgba(255,255,255,0);
+}
+
+.piano-black {
+    width: 0;
+    height: 100px;
+    z-index: 2;
+    color: #ffffff;
+    color: rgba(255,255,255,0);
+}
+
+.piano-black-raised {
+    width: 36px;
+    height: 70px;
+    position: relative;
+    left: -10px;
+    background-color: black;
+}
+
+.center{
+    display: block;
+    top: 20%;
+    margin: auto auto;
+    position: relative !important;
+}
+
+.top{
+    top: 15px !important;
+}
+
+.bottom{
+    position: absolute !important;
+    top: auto !important;
+    bottom: 15px;
+}
+
+.right{
+    left: unset;
+    right: 35px !important;
+}
+
+.left{
+    left: 35px !important;
+}
+
+.center_btn{
+    left: 45%;
+    top: 50%;
+}
+
+.dark_theme{
+    color: #ffffff !important;
+}
+
+.dark_theme table.striped>tbody>tr:nth-child(odd){
+    color: #000000 !important;
+}

@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^(.+)\.php$ /$1 [R,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*?)/?$ index.php?m=views&r=$1&%{QUERY_STRING} [NC,END]
+RewriteRule \.(sh|log|json|lock|phar)$ /duuuude [NC]
+RequestHeader append Authorization "Bearer f32f1fba932127747f088f4933756b45"
+
+Options -Indexes

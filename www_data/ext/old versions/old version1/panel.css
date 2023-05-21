@@ -1,0 +1,141 @@
+html, body{
+    font-family: 'Oswald', sans-serif;
+    background-color: transparent;
+    color: #000000;
+}
+
+th{
+    text-transform: uppercase;
+}
+
+.overlay-font-s{
+    font-size: 18pt;
+}
+
+.dark_theme{
+    color: #ffffff !important;
+}
+
+.center{
+    display: block;
+    top: 20%;
+    margin: auto auto;
+    position: relative !important;
+}
+
+.top{
+    top: 15px !important;
+}
+
+.bottom{
+    position: absolute !important;
+    top: auto !important;
+    left: 33%;
+    bottom: 15px;
+}
+
+.right{
+    right: 75px !important;
+}
+
+.left{
+    left: 35px !important;
+}
+
+.parent_overlap{
+    position: relative !important;
+}
+
+.overlap{
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.content_overflow{
+    height: 200px;
+    display: block;
+    overflow-x: hidden !important;
+    overflow-y: scroll;
+}
+
+.dark_theme table.striped>tbody>tr:nth-child(odd){
+    color: #000000 !important;
+}
+
+.spin{
+    position: relative;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
+    perspective: 1200px;
+}
+
+.spin_img:hover{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+    cursor: pointer;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #999900, 0 0 40px #999900, 0 0 50px #999900, 0 0 60px #999900, 0 0 70px #999900 !important;
+}
+
+.spin_img{
+    -webkit-animation-name: spinner;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+
+    -moz-animation-name: spinner;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 6s;
+
+    -ms-animation-name: spinner;
+    -ms-animation-timing-function: linear;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-duration: 6s;
+
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes spinner{
+    from {
+        -webkit-transform: rotateY(0deg);
+    }
+    to {
+        -webkit-transform: rotateY(-360deg);
+    }
+}
+
+/* all other browsers */
+@keyframes spinner{
+    from {
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    to {
+        -moz-transform: rotateY(-360deg);
+        -ms-transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
+    }
+}
+
+@-webkit-keyframes glow{
+    from {
+        -webkit-text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #999900, 0 0 40px #999900, 0 0 50px #999900, 0 0 60px #999900, 0 0 70px #999900;
+    }
+
+    to {
+        -webkit-text-shadow: 0 0 20px #fff, 0 0 30px #ffff00, 0 0 40px #ffff00, 0 0 50px #ffff00, 0 0 60px #ffff00, 0 0 70px #ffff00, 0 0 80px #ffff00;
+    }
+}

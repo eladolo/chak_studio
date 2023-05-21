@@ -1,0 +1,20 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: transparent;
+    color: #000000;
+}
+.tabs .tab a:hover, .tabs .tab a.active, .tabs .tab a{
+    color: #000;
+}
+.tabs .indicator{
+    background-color: #000;
+}
+#credentials, #help{
+    margin-bottom: 150px;
+}
+.dark_theme{
+    color: #ffffff !important;
+}
+select{
+    color: #000000 !important;
+}

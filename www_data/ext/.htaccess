@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteRule \.(sh|log|json|lock|phar)$ /duuuude [NC]
+
+Options -Indexes

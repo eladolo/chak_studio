@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>pupface configuration</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/pupface100x100.png" />
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans|Abril+Fatface|Josefin+Slab|Sedgwick+Ave|Acme|Anton|Arvo|Dancing+Script|Lato|Lora|Merriweather|Pacifico|Questrial|Saira+Extra+Condensed|Sedgwick+Ave|Sedgwick+Ave+Display|Shadows+Into+Light|Oswald|Material+Icons|Mansalva|Turret+Road|Amatic+SC|Caveat|Luckiest+Guy|Bangers">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/color-picker.css">
+        <link rel="stylesheet" href="css/magic.css">
+        <link rel="stylesheet" href="css/conf.css">
+        <link rel="stylesheet" href="css/overlay.css">
+    </head>
+    <body>
+        <div id="app" class="full-height"></div>
+        <div class="form_view">
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs" style="overflow: hidden;">
+                        <li class="tab col s3"><a href="#tiers"><i class="material-icons">art_track</i></a></li>
+                        <li class="tab col s3"><a href="#help"><i class="material-icons">help</i></a></li>
+                        <li class="tab col s3"><a href="#feedback"><i class="material-icons">feedback</i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="tiers">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="switch">
+                            <label>
+                                Off
+                                <input type="checkbox" name="pupface_power" id="pupface_power" class="tooltiped label_config_poweroff_tooltiped" data-tooltip="poweroff" data-position="top" />
+                                <span class="lever"></span>
+                                On
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col s12"><br></div>
+                    <div class="col s12 pupface_posicion">
+                        <label for="viewer_btn" class="label_config_stream_pupface_btn">pupface button on stream</label>
+                        <select id="viewer_btn" class="validate mandatory browser-default tooltiped label_select_config_position" data-position="top" data-tooltip="Position">
+                            <option value="">Position</option>
+                            <option value="center">Center</option>
+                            <option value="cleft">Center left</option>
+                            <option value="cright">Center right</option>
+                            <option value="tleft">Top left</option>
+                            <option value="tright">Top right</option>
+                            <option value="tcenter">Top center</option>
+                            <option value="bleft">Bottom left</option>
+                            <option value="bright">Bottom right</option>
+                            <option value="bcenter">Bottom center</option>
+                        </select>
+                    </div>
+                    <div class="col s12">
+                        <hr>
+                        <br>
+                    </div>
+                </div>
+                <div class="pupface_on">
+                    <div class="row">
+                        <div class="col s12">
+                            <select id="tier_select" class="tabs tabs-fixed-width browser-default tooltiped" data-position="top" data-tooltip="pupfaces">
+                                <option value="tier1">pupface1</option>
+                                <option value="tier2">pupface2</option>
+                                <option value="tier3">pupface3</option>
+                                <option value="tier4">pupface4</option>
+                                <option value="tier5">pupface5</option>
+                                <option value="tier6">pupface6</option>
+                                <option value="tier7">pupface7</option>
+                                <option value="tier8">pupface8</option>
+                                <option value="tier9">pupface9</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="tierClon" class="row hide tierContainer">
+                        <div class="col s12">
+                            <select id="tierClon_bits" class="tabs tabs-fixed-width browser-default tooltiped label_config_bits" data-position="top" data-tooltip="Bits">
+                                <option value="none">none</option>
+                                <option value="1">1</option>
+                                <option value="2">5</option>
+                                <option value="3">10</option>
+                                <option value="4">50</option>
+                                <option value="5">100</option>
+                                <option value="6">500</option>
+                                <option value="7">1000</option>
+                                <option value="8">2500</option>
+                                <option value="9">5000</option>
+                            </select>
+                        </div>
+                        <div class="col s12">
+                            <br>
+                            <label for="tierClon_confetti" class="label_config_confetti">Confetti</label>
+                            <div class="switch">
+                                <label>
+                                    Off
+                                    <input type="checkbox" name="tierClon_confetti" id="tierClon_confetti" />
+                                    <span class="lever"></span>
+                                    On
+                                </label>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col s12">
+                            <label for="tierClon_preview" class="label_config_image">Image</label>
+                        </div>
+                        <div class="col s12">
+                            <img src="img/pup1.gif" class="tierClon_preview circle" style="width:64px; height:64px;">
+                            <select id="tierClon_img_select" class="validate mandatory pup_select browser-default tooltiped" data-position="top" data-tooltip="pups">
+                                <option value="none">none</option>
+                                <option value="img/pup1.gif">pup1</option>
+                                <option value="img/pup2.gif">pup2</option>
+                                <option value="img/pup3.gif">pup3</option>
+                                <option value="img/pup4.gif">pup4</option>
+                                <option value="img/pup5.gif">pup5</option>
+                                <option value="img/pup6.gif">pup6</option>
+                                <option value="img/pup7.gif">pup7</option>
+                                <option value="img/pup8.gif">pup8</option>
+                                <option value="img/pup9.gif">pup9</option>
+                                <option value="img/pup10.gif">pup10</option>
+                                <option value="img/pup11.gif">pup11</option>
+                                <option value="img/pup12.gif">pup12</option>
+                                <option value="img/pup13.gif">pup13</option>
+                                <option value="img/pup14.gif">pup14</option>
+                                <option value="img/pup15.gif">pup15</option>
+                                <option value="img/pup16.gif">pup16</option>
+                                <option value="img/pup17.gif">pup17</option>
+                                <option value="img/pup18.gif">pup18</option>
+                                <option value="img/pup19.gif">pup19</option>
+                                <option value="">custom</option>
+                            </select>
+                            <input placeholder="https://media.giphy.com/media/8vLnXxLJJBwFn240An/giphy.gif" data-position="top" data-tooltip="<p>Gifs from:<br>https://giphy.com<br>https://www.dropbox.com</p>" id="tierClon_img" name="tierClon_img" type="text" class="validate imgChange checkIMG hide custom_img tooltiped">
+                        </div>
+                        <div class="col s6">
+                            <label for="tierClon_body" class="label_config_title">Title</label>
+                            <input placeholder="Title" name="tierClon_body" id="tierClon_body" type="text" class="validate">
+                        </div>
+                        <div class="col s6">
+                            <label for="tierClon_iconres" class="label_config_iconres">Chat response</label>
+                            <input placeholder="Chat icon" name="tierClon_iconres" id="tierClon_iconres" type="text" class="validate">
+                        </div>
+                        <div class="col s6">
+                            <label for="tierClon_font" class="label_config_font">Font</label><br>
+                            <select id="tierClon_font" name="tierClon_font" class="setting browser-default font_color">
+                                <option value="" disabled selected>---</option>
+                                <option value="Oswald" style="font-family:'Oswald' !important; ">Oswald :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="DefaultFont" style="font-family:'DefaultFont' !important; ">DefaultFont :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Open Sans" style="font-family:'Open Sans' !important; ">Open Sans :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Abril Fatface" style="font-family:'Abril Fatface' !important; ">Abril Fatface :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Josefin Slab" style="font-family:'Josefin Slab' !important; ">Josefin Slab :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Sedgwick Ave" style="font-family:'Sedgwick Ave' !important; ">Sedgwick Ave :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Sedgwick Ave Display" style="font-family:'Sedgwick Ave Display' !important; ">Sedgwick Ave Display :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Acme" style="font-family:'Acme' !important; ">Acme :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Anton" style="font-family:'Anton' !important; ">Anton :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Arvo" style="font-family:'Arvo' !important; ">Arvo :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Dancing Script" style="font-family:'Dancing Script' !important; ">Dancing Script :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Lato" style="font-family:'Lato' !important; ">Lato :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Lora" style="font-family:'Lora' !important; ">Lora :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Merriweather" style="font-family:'Merriweather' !important; ">Merriweather :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Pacifico" style="font-family:'Pacifico' !important; ">Pacifico :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Questrial" style="font-family:'Questrial' !important; ">Questrial :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Saira Extra Condensed" style="font-family:'Saira Extra Condensed' !important; ">Saira Extra Condensed :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Shadows Into Light" style="font-family:'Shadows Into Light' !important; ">Shadows Into Light :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Skranji" style="font-family:'Skranji' !important; ">Skranji :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Mansalva" style="font-family:'Mansalva' !important; ">Mansalva :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Turret Road" style="font-family:'Turret Road' !important; ">Turret Road :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Amatic SC" style="font-family:'Amatic SC' !important; ">Amatic SC :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Caveat" style="font-family:'Caveat' !important; ">Caveat :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Luckiest Guy" style="font-family:'Luckiest Guy' !important; ">Luckiest Guy :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                                <option value="Bangers" style="font-family:'Bangers' !important; ">Bangers :     Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+                            </select>
+                        </div>
+                        <div class="col s6">
+                            <label for="tierClon_font_color" class="label_config_font_color">font color</label>
+                            <input id="tierClon_font_color" name="tierClon_font_color" type="text" class="setting" placeholder="#000000" value="#999900">
+                        </div>
+                        <div class="col s6">
+                            <label for="tierClon_glow_light" class="label_config_glow_light">glow light</label>
+                            <input id="tierClon_glow_light" name="tierClon_glow_light" type="text" class="setting" placeholder="#000000" value="#999900">
+                        </div>
+                        <div class="col s6">
+                            <label for="tierClon_glow_hard" class="label_config_glow_dark">glow dark</label>
+                            <input id="tierClon_glow_hard" name="tierClon_glow_hard" type="text" class="setting" placeholder="#000000" value="#ffff00">
+                        </div>
+                        <div class="input-field col s12">
+                            <select id="tierClon_position" class="validate mandatory browser-default tooltiped label_select_config_position" data-position="top" data-tooltip="Position">
+                                <option value="">Position</option>
+                                <option value="center">Center</option>
+                                <option value="tleft">Top left</option>
+                                <option value="tright">Top right</option>
+                                <option value="tcenter">Top center</option>
+                                <option value="bleft">Bottom left</option>
+                                <option value="bright">Bottom right</option>
+                                <option value="bcenter">Bottom center</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s6">
+                            <select id="tierClon_fadein" class="validate mandatory browser-default tooltiped label_select_config_fadein" data-position="top" data-tooltip="Animation fadein">
+                                <option value="">Animation in</option>
+                                <option value="fadein">Fadein</option>
+                                <option value="slidedown">Slidedown</option>
+                                <option value="puffIn">Puffin</option>
+                                <option value="vanishIn">vanishIn</option>
+                                <option value="foolishIn">FoolishIn</option>
+                                <option value="swashIn">SwashIn</option>
+                                <option value="swap">Swap</option>
+                                <option value="twisterInDown">TwisterInDown</option>
+                                <option value="twisterInUp">TwisterInUp</option>
+                                <option value="openDownLeftReturn">OpenDownLeftReturn</option>
+                                <option value="openUpRightReturn">OpenUpRightReturn</option>
+                                <option value="tinLeftIn">TinLeftIn</option>
+                                <option value="tinRightIn">TinRightIn</option>
+                                <option value="tinUpIn">TinUpIn</option>
+                                <option value="tinDownIn">TinDownIn</option>
+                                <option value="boingInUp">BoingInUp</option>
+                                <option value="spaceInUp">SpaceInUp</option>
+                                <option value="spaceInRight">SpaceInDownpaceInRight</option>
+                                <option value="spaceInDown">SpaceInDown</option>
+                                <option value="spaceInLeft">SpaceInLeft</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s6">
+                            <select id="tierClon_fadeout" class="validate mandatory browser-default tooltiped label_select_config_fadeout" data-position="top" data-tooltip="Animation fadeout">
+                                <option value="">Animation out</option>
+                                <option value="fadeout">Fadeout</option>
+                                <option value="slideup">Slideup</option>
+                                <option value="puffOut">PuffOut</option>
+                                <option value="vanishOut">VanishOut</option>
+                                <option value="holeOut">HoleOut</option>
+                                <option value="swashOut">SwashOut</option>
+                                <option value="magic">Magic</option>
+                                <option value="openDownLeft">OpenDownLeft</option>
+                                <option value="openDownRight">OpenDownRight</option>
+                                <option value="openUpLeft">OpenUpLeft</option>
+                                <option value="openUpRight">OpenUpRight</option>
+                                <option value="bombLeftOut">BombLeftOut</option>
+                                <option value="bombRightOut">BombRightOut</option>
+                                <option value="tinLeftOut">TinLeftOut</option>
+                                <option value="tinRightOut">TinRightOut</option>
+                                <option value="tinUpOut">TinUpOut</option>
+                                <option value="tinDownOut">TinDownOut</option>
+                                <option value="boingOutDown">BoingOutDown</option>
+                                <option value="spaceOutUp">SpaceOutUp</option>
+                                <option value="spaceOutRight">SpaceOutRight</option>
+                                <option value="spaceOutDown">SpaceOutDown</option>
+                                <option value="spaceOutLeft">SpaceOutLeft</option>
+                                <option value="rotateDown">RotateDown</option>
+                                <option value="rotateUp">RotateUp</option>
+                                <option value="rotateLeft">RotateLeft</option>
+                                <option value="rotateRight">RotateRight</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s6">
+                            <select id="tierClon_type_img" class="validate browser-default tooltiped label_select_config_type" data-position="top" data-tooltip="Type img">
+                                <option value="">Type img</option>
+                                <option value="static">Static</option>
+                                <option value="spin">Spin</option>
+                                <option value="spin_wheel">Wheel</option>
+                                <option value="magic_type">Magic</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s6">
+                            <select id="tierClon_shape_img" class="validate browser-default tooltiped label_select_config_shape" data-position="top" data-tooltip="Shape img">
+                                <option value="">Shape img</option>
+                                <option value="square">Square</option>
+                                <option value="rectangleh">Rectangle horizontal</option>
+                                <option value="rectanglev">Rectangle vertical</option>
+                                <option value="round">Round</option>
+                                <option value="circle">Circle</option>
+                                <option value="triangle">Triangle</option>
+                                <option value="trapezoid">Trapezoid</option>
+                                <option value="pentagon">Pentagon</option>
+                                <option value="diamond">Diamond</option>
+                                <option value="heart">Heart</option>
+                                <option value="equis">X</option>
+                                <option value="star">Star</option>
+                                <option value="crazy_star">Crazy star</option>
+                            </select>
+                        </div>
+                        <div class="col s12">
+                            <br>
+                            <select id="tierClon_audio_select" class="validate mandatory browser-default tooltiped tooltip_config_select_audio" data-position="top" data-tooltip="Audio">
+                                <option value="">Audio</option>
+                                <option value="audio/bell1.mp3">bell1</option>
+                                <option value="audio/bell2.mp3">bell2</option>
+                                <option value="audio/bell3.mp3">bell3</option>
+                                <option value="audio/bell4.mp3">bell4</option>
+                                <option value="audio/bell5.mp3">bell5</option>
+                                <option value="audio/bell6.mp3">bell6</option>
+                                <option value="audio/bell7.mp3">bell7</option>
+                                <option value="audio/bell8.mp3">bell8</option>
+                                <option value="custom">custom</option>
+                            </select>
+                            <input type="text" placeholder="audio url" name="tierClon_audio_url" id="tierClon_audio_url" class="validate tooltiped checkAUDIO tooltiped_label_config_audio hide" data-tooltip="Use a dropbox public link like:<br><br><b>https://www.dropbox.com/s/mbyns3mabixdh4a/Bell10.wav?dl=0</b><br><br>Valid formats: <br>.mp3, .wav, .ogg" data-position="top" />
+                        </div>
+                        <div class="col s11">
+                            <div class="range-field">
+                                <label for="tierClon_audio_volumen" class="label_config_volumen">Audio volume</label>
+                                <input data-tooltip="audio volume" data-position="top" name="tierClon_audio_volumen" id="tierClon_audio_volumen" type="range" class="validate tooltiped label_config_volumen_tooltiped" min="0" max="1" step="0.1">
+                            </div>
+                            <div class="col s1">
+                            </div>
+                        </div>
+                        <div class="col s8">
+                            <div class="range-field">
+                                <label for="tierClon_timer_time" class="label_config_timeout">Alert timeout</label>
+                                <input data-tooltip="alert timeout in seconds" data-position="top" name="tierClon_timer_time" id="tierClon_timer_time" type="range" class="validate tooltiped label_config_timeout_tooltiped" min="1" max="20">
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="switch">
+                                <label>
+                                    Off
+                                    <input type="checkbox" name="tierClon_status" id="tierClon_status" class="tooltiped label_config_status_tooltiped" data-tooltip="alert status" data-position="top" />
+                                    <span class="lever"></span>
+                                    On
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tiers_content"></div>
+                    <div class="row">
+                        <div class="col s12">
+                            <a class="btnTest btn-large blue label_config_btntest" style="width:100%;">test</a>
+                        </div>
+                        <div class="col s12">
+                            <br>
+                        </div>
+                        <div class="col s6">
+                            <a class="btnSave btn-large green label_config_btnsave" style="width:100%;">save</a>
+                        </div>
+                        <div class="col s6">
+                            <a class="btnReset btn-large red label_config_btnreset" style="width:100%;">reset</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="help">
+                <div class="col s12">
+                    <h5 class="label_config_requirements">Requirements</h5>
+                    <p class="label_config_requirements_content">
+                        - Bits actives in your channel<br>
+                    </p>
+                    <h5 class="label_config_usage">Usage</h5>
+                    <p class="label_config_usage_content">
+                        - Save configuration for each pupfaces(9) on this panel.<br>
+                        &nbsp; . Image.<br>
+                        &nbsp; . Title.<br>
+                        &nbsp; . Font.<br>
+                        &nbsp; . Font color.<br>
+                        &nbsp; . Glow color.<br>
+                        &nbsp; . Position.<br>
+                        &nbsp; . Fadein animation.<br>
+                        &nbsp; . Fadeout animation.<br>
+                        &nbsp; . Type.<br>
+                        &nbsp; . Shape.<br>
+                        &nbsp; . Audio sound.<br>
+                        &nbsp; . Audio volumen.<br>
+                        &nbsp; . Alert Duration.<br>
+
+                        - Let your viewers trigger the pupfaces.<br>
+                        &nbsp; . They can be tested before send it for bits.<br>
+                        &nbsp;&nbsp; . The alert will be show only to the viewer who made the test.<br>
+                        &nbsp; . If the bits process completed with success the alert will be send to all the viewers in channel.<br>
+                    </p>
+                    <h5 class="label_config_credits">Credits</h5>
+                    <p class="label_config_credits_content" style="margin: 15px;">
+                        - <a href="https://jquery.com/" title="jquery" target="_blank">jquery</a><br>
+                        - <a href="https://materializecss.com/" title="materializecss" target="_blank">materializecss</a><br>
+                        - <a href="https://www.minimamente.com/project/magic/" title="magic" target="_blank">magic CSS</a><br>
+                        - <a href="https://www.apache.org/" title="apache" target="_blank">apache</a><br>
+                        - <a href="https://php.net/" title="php" target="_blank">php</a><br>
+                        - <a href="https://giphy.com/" title="giphy.com" target="_blank">giphy.com</a><br>
+                        - <a href="https://github.com/mathusummut/confetti.js" title="confetti.js" target="_blank">confetti.js</a><br>
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="feedback">
+                <div class="col s12">
+                    <div class="input-field col s12">
+                        <textarea id="feedback_text" class="materialize-textarea"></textarea>
+                        <label for="feedback_text" class="label_config_feedback_text">Feedback</label>
+                    </div>
+                    <div class="col s12">
+                        <a class="cursor btn green white-text btnSendFeedback label_config_a_send">send</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="position:inherit ; bottom: 0; right: 25px;">
+            <div class="col s12">
+                <small style="float:right; margin:5px;padding-right: 20;"><span class="label_config_support_text">* If you find useful this extension your support it's very welcome</span> <a href="https://streamlabs.com/eladolo" target="_blank"><img src="img/TopHamBTTV.png"  class="tooltiped" data-tooltip="Thxs" data-position="top" alt="TopHam" /></a></small>
+            </div>
+        </div>
+        <svg width="192" height="192">
+            <defs>
+                <clipPath id="heart_svg" class="glow" style="width:192px;">
+                    <polygon points="94 192,218 98,231 56,221 30,194 28,144 43,120 56,102 67,79 53,49 31,9 23,-17 30,-25 55,-16 95"></polygon>
+                </clipPath>
+            </defs>
+        </svg>
+        <div class="overlay_custom">
+            <div class="content_img">
+                <h6 class="alert_body glow"></h6><br>
+                <div class="content_img_template">
+                    <div class="static hide">
+                        <img src="" class="glow_img" />
+                        <div class="shadow hide"></div>
+                    </div>
+                    <div class="spin hide">
+                        <img src="" class="spin_img" />
+                        <div class="shadow hide"></div>
+                    </div>
+                    <div class="spin_wheel hide">
+                        <img src="" class="spin_wheel_img" />
+                        <div class="shadow hide"></div>
+                    </div>
+                    <div class="magic_type hide">
+                        <img src="" class="magic_img" />
+                        <div class="shadow hide"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+        <!-- If you use any external libraries, such as jQuery, you must include
+          them as part of your extension.  Twitch does not allow extensions to link
+          to external libraries. -->
+        <script src="js/jquery-2.2.4.js" type="text/javascript"></script>
+        <script src="js/jquery-ui-1.10.3.custom.js" type="text/javascript"></script>
+        <script src="js/materialize.js" type="text/javascript"></script>
+        <script src="js/confetti.js" type="text/javascript"></script>
+        <script src="js/color-picker.js" type="text/javascript"></script>
+        <script src="js/hmac-sha256.js" type="text/javascript"></script>
+        <script src="js/enc-base64.js" type="text/javascript"></script>
+        <script src="js/jwt.js" type="text/javascript"></script>
+        <script src="js/sanitize.js" type="text/javascript"></script>
+        <script src="js/alerts.js" type="text/javascript"></script>
+        <script src="js/lang.js" type="text/javascript"></script>
+        <script src="js/conf.js" type="text/javascript"></script>
+    </body>
+</html>

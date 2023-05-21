@@ -1,0 +1,20 @@
+Let streamer to show a piano overlay showing which notes below to a given chord or scale notes, with sound of each of one, and the given notes on chat.
+You can let your viewers to trigger the same scales or chords using bits or not.
+
+-In the configuration pane you will have a:
+ - viewers view  on/off
+ if on:
+  - position of the open button on the video overlay
+  - the amount of bits for each button  type(chords, scales or custom notes).
+  - color of the played notes
+
+-On your live dashboard you will have a panel where you as broadcaster can use to trigger each type(chords, scales or custom notes)
+
+Once the stream start:
+
+-You will have an overlay that will show a button who open a modal with the same panel of the live dashboard
+-stats of usages inside the modal.
+-if the "viewers view" it's activated this will  be show to the viewers too.
+* The button overlay it's always show for the broadcaster even if they turn off the view on the config panel
+
+10 am - 2 pm mexico city can be test on stream
