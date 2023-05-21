@@ -1,6 +1,6 @@
 <?php
 	$api_index_load = true;
-	include_once($_SERVER["DOCUMENT_ROOT"] . "../lib/API/" . API_VERSION . "/index.php");
+	include_once("../lib/API/" . API_VERSION . "/index.php");
 
 	$_REQUEST["id"] = "1";
 	$chakstudio = $API->infoGame();
