@@ -11,7 +11,8 @@ header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 $dominio = $_SERVER["SERVER_NAME"];
 define('BASE_URL', $dominio);//Instalation folder
-include_once( "../config/config.php");
+$_SERVER["DOCUMENT_ROOT"] = "";
+include_once( $_SERVER["DOCUMENT_ROOT"] . "../config/config.php");
 header('Access-Control-Allow-Origin: https://chakstudio.com');
 try {
     //recibo peticion de URL
@@ -34,7 +35,7 @@ try {
         include_once("views/base/bootstrap.php");
     } else {
     	$api_index_load = true;
-        include_once("../lib/API/" . API_VERSION . "/index.php");
+        include_once($_SERVER["DOCUMENT_ROOT"] . "../lib/API/" . API_VERSION . "/index.php");
 
         //Reviso autorizacion de apikey
 
