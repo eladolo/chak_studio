@@ -12,7 +12,7 @@ header('Content-type: application/json');
 $dominio = $_SERVER["SERVER_NAME"];
 define('BASE_URL', $dominio);//Instalation folder
 $_SERVER["DOCUMENT_ROOT"] = "";
-include_once( $_SERVER["DOCUMENT_ROOT"] . "../config/config.php");
+include_once($_SERVER["DOCUMENT_ROOT"] . "../config/config.php");
 header('Access-Control-Allow-Origin: https://chakstudio.com');
 try {
     //recibo peticion de URL
