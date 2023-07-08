@@ -7,7 +7,7 @@
   		<li class="left"><a href="/dashboard" data-tooltip="Dashboard" class="tooltipped"><img alt="logo" src="img/logo2.png" style="height:24px;"></a></li>
   		<li class="left"><a href="/settings" data-tooltip="Settings" class="tooltipped"><img alt="phone" src="img/phone.png" style="height:24px;"></a></li>
 		<li class="divider"></li>
-		<li class="left"><a href="https://webmail.chakstudio.com" _target="_blank" data-tooltip="Email" class="tooltipped"><img alt="poncho" src="img/poncho.png" style="height:24px;"></a></li>
+		<li class="left"><a href="https://webmail.chakstudio.com" target="_blank" data-tooltip="Email" class="tooltipped"><img alt="poncho" src="img/poncho.png" style="height:24px;"></a></li>
   		<li class="divider"></li>
   		<li class="left"><a href="/manageGames" data-tooltip="Games" class="tooltipped"><img alt="games" src="img/games.png" style="height:24px;"></a></li>
   		<li class="left"><a href="/manageSliders" data-tooltip="Sliders" class="tooltipped"><img alt="store" src="img/cupones.png" style="height:24px;"></a></li>
