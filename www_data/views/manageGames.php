@@ -7,7 +7,7 @@
     }
 
 	$games = $API->getGames();
-	$games = $games["data"][0];
+	$games = $games["data"];
 ?>
 <style type="text/css">
 	.logos{
