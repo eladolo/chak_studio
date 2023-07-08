@@ -11,7 +11,7 @@
 ?>
 <div class="view_content row" style="position:absolute; width:100%; left: 10px; top: 75px;">
 	<div class="col s12">
-		<iframe src="/roundcube" frameborder="0" scrolling="no" style="width:100%; min-height:500px;" onload="resizeIframe(this)" name="mail_iframe" id="mail_iframe"></iframe>
+		<iframe src="https://webmail.chakstudio.com" frameborder="0" scrolling="no" style="width:100%; min-height:500px;" onload="resizeIframe(this)" name="mail_iframe" id="mail_iframe"></iframe>
 	</div>
   <div class="col s12">
     <br><br><br>
