@@ -652,26 +652,26 @@
             if(isset($captcha_res["error"])){
                 $respuesta = array("error" => 96);
             } else {
-                $send_mail = false;
+                $send_mail = true;
 
                 // Initialize CURL:
-                $ch = curl_init('https://apilayer.net/api/check?access_key=' . MAILBOXLAYER_API . '&email=' . $email . '');
-                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                // Store the data:
-                $json = curl_exec($ch);
-                curl_close($ch);
-                // Decode JSON response:
-                $validationResult = json_decode($json, true);
+                // $ch = curl_init('https://apilayer.net/api/check?access_key=' . MAILBOXLAYER_API . '&email=' . $email . '');
+                // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                // // Store the data:
+                // $json = curl_exec($ch);
+                // curl_close($ch);
+                // // Decode JSON response:
+                // $validationResult = json_decode($json, true);
 
-                if(!isset($validationResult['score'])) {
-                    return array("error" => 97);
-                }
+                // if(!isset($validationResult['score'])) {
+                //     return array("error" => 97);
+                // }
 
-                if($validationResult['score'] >= 0.70) {
-                    $send_mail = true;
-                } else {
-                    return array("error" => 98);
-                }
+                // if($validationResult['score'] >= 0.70) {
+                //     $send_mail = true;
+                // } else {
+                //     return array("error" => 98);
+                // }
 
                 if($send_mail){
                     $from = $email;
@@ -1221,26 +1221,26 @@
             if(isset($captcha_res["error"])){
                 return array("error" => 96);
             } else {
-                $is_trusted = false;
+                $is_trusted = true;
 
-                // Initialize CURL:
-                $ch = curl_init('https://apilayer.net/api/check?access_key=' . MAILBOXLAYER_API . '&email=' . $_REQUEST["pp_email"] . '');
-                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                // Store the data:
-                $json = curl_exec($ch);
-                curl_close($ch);
-                // Decode JSON response:
-                $validationResult = json_decode($json, true);
+                // // Initialize CURL:
+                // $ch = curl_init('https://apilayer.net/api/check?access_key=' . MAILBOXLAYER_API . '&email=' . $_REQUEST["pp_email"] . '');
+                // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                // // Store the data:
+                // $json = curl_exec($ch);
+                // curl_close($ch);
+                // // Decode JSON response:
+                // $validationResult = json_decode($json, true);
 
-                if(!isset($validationResult['score'])) {
-                    return array("error" => 97);
-                }
+                // if(!isset($validationResult['score'])) {
+                //     return array("error" => 97);
+                // }
 
-                if($validationResult['score'] >= 0.70) {
-                    $is_trusted = true;
-                } else {
-                    return array("error" => 98);
-                }
+                // if($validationResult['score'] >= 0.70) {
+                //     $is_trusted = true;
+                // } else {
+                //     return array("error" => 98);
+                // }
 
                 if($is_trusted){
                     $this->tokenPaypal();
@@ -1310,26 +1310,26 @@
             $data_array = array();
             $server_output = "";
             $nid = "-1";
-            $is_trusted = false;
+            $is_trusted = true;
 
             // Initialize CURL:
-            $ch = curl_init('https://apilayer.net/api/check?access_key=' . MAILBOXLAYER_API . '&email=' . $_REQUEST["pp_email"] . '');
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            // Store the data:
-            $json = curl_exec($ch);
-            curl_close($ch);
-            // Decode JSON response:
-            $validationResult = json_decode($json, true);
+            // $ch = curl_init('https://apilayer.net/api/check?access_key=' . MAILBOXLAYER_API . '&email=' . $_REQUEST["pp_email"] . '');
+            // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            // // Store the data:
+            // $json = curl_exec($ch);
+            // curl_close($ch);
+            // // Decode JSON response:
+            // $validationResult = json_decode($json, true);
 
-            if(!isset($validationResult['score'])) {
-                return array("error" => 97, "data" => $_REQUEST);
-            }
+            // if(!isset($validationResult['score'])) {
+            //     return array("error" => 97, "data" => $_REQUEST);
+            // }
 
-            if($validationResult['score'] >= 0.70) {
-                $is_trusted = true;
-            } else {
-                return array("error" => 98, "data" => $_REQUEST);
-            }
+            // if($validationResult['score'] >= 0.70) {
+            //     $is_trusted = true;
+            // } else {
+            //     return array("error" => 98, "data" => $_REQUEST);
+            // }
 
             if($is_trusted){
                 $this->tokenPaypal();
