@@ -9,8 +9,6 @@
 	$sliders = $API->getsliders();
 	$sliders = $sliders["data"][0];
 
-	print_r($sliders);
-
 	$games = $API->getGames();
 	$games = $games["data"][0];
 ?>

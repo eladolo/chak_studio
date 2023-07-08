@@ -32,6 +32,7 @@ try {
     }
 
     if($requested_method == "views") {
+        header('Content-Type: text/html; charset=utf-8');
         include_once("views/base/bootstrap.php");
     } else {
     	$api_index_load = true;
