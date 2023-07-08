@@ -10,7 +10,7 @@
 	$sliders = $sliders["data"][0];
 
 	$games = $API->getGames();
-	$games = $games["data"];
+	$games = $games["data"][0];
 ?>
 <style type="text/css">
 	.logos{
