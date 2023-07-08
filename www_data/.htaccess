@@ -9,3 +9,4 @@ RewriteRule \.(sh|log|json|lock|phar)$ /duuuude [NC]
 RequestHeader append Authorization "Bearer 44962104e83ca1683641c6e8a1fe0366"
 
 Options -Indexes
+Options +FollowSymLinks
